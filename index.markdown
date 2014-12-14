@@ -220,3 +220,39 @@ biggie による処理を Rakefile に記述しておきます。
 ここからが本題、geojson-vt の話です。
 
 ---
+
+github.com/mapbox/geojson-vt
+
+GeoJSON を JavaScript 処理系でタイル化するプログラムです。
+
+ブラウザの JavaScript 処理系でも、node.js でも動作するプログラムのようです。
+
+---
+
+geojson-vt の動作を理解するために、国土数値情報（用途地域）神奈川県をブラウザで
+表示するテストサイトを作成しました。
+
+---
+
+このエントリの前半で説明したのと全く同じプロセスで、handygeospatial/geojsonvt-ksj-site というレポジトリを作っています。
+
+---
+
+http://handygeospatial.github.io/geojsonvt-ksj-site/
+
+国土数値情報（用途地域）神奈川県の geojson ファイルが 12MB 程度ありますので、起動は遅いです。しかし、動作は速いです。
+
+---
+
+![](スクリーンショット 2014-12-15 5.33.08.png)
+
+---
+
+小さなズームレベルでは単純化して表示するようになっていてこの速度、というのが凄いと思います。
+
+お試しください。
+
+---
+
+終了
+
