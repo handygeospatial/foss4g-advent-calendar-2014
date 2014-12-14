@@ -15,21 +15,20 @@ FOSS4G Advent Calendar 2014 の 2014-12-15 の記事です。
 
 ---
 
-geojson-vt の情報を頂いたことをきっかけに、話題を変え、よりコードっぽいものをエントリーしたいと思いました。
+最近 geojson-vt の情報あり
+
+→もっとコードっぽいものをエントリーしたい！
 
 ---
 
-そして、コード書きにソーシャルコーディングのツールを使うと考えた時に、どういう風なプロセスになるのかお伝えしてみたいと思いました。
+ソーシャルコーディングのツールを活用したプロセスを紹介したい！
 
-自己流なので、ご紹介する方法が唯一の正解、というわけではありません。
-
-まずは github pages を作るところから。それから、プレゼンテーションづくりには tmcw/biggie を使うことにしました。
+* github pages の活用
+* tmcw/biggie によるプレゼン
 
 ---
 
-まずは foss4g-advent-calendar-2014 という名前で github のレポジトリを作りました。
-
-github に handygeospatial/foss4g-advent-calendar-2014 というレポジトリを作ったことになります。
+github に handygeospatial/foss4g-advent-calendar-2014 というレポジトリを作成。
 
 この作業をするには、github.com のアカウントが必要です。
 
@@ -240,9 +239,9 @@ geojson-vt の動作を理解するために、国土数値情報（用途地域
 
 ---
 
-http://handygeospatial.github.io/geojsonvt-ksj-site/
+国土数値情報（用途地域）神奈川県の geojson ファイル（12MB）を geojson-vt を使って表示するサイトです。
 
-国土数値情報（用途地域）神奈川県の geojson ファイルが 12MB 程度ありますので、起動は遅いです。しかし、起動後の動作は速いです。
+地理院タイル（標準地図）を参考に敷いています。
 
 ---
 
@@ -253,6 +252,10 @@ http://handygeospatial.github.io/geojsonvt-ksj-site/
 小さなズームレベルでは単純化して表示するようになっていてこの速度、というのが凄いと思います。
 
 お試しください。
+
+---
+
+http://handygeospatial.github.io/geojsonvt-ksj-site/
 
 ---
 
