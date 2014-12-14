@@ -103,5 +103,114 @@ window.onload = function() {
     go(cur);
 };
 </script></head><body>
-<div><h1 id="social-coding-geojson-vt">social coding geojson-vt</h1>
+<div><h1 id="-geojson-vt-">ソーシャルコーディングで geojson-vt を起こす</h1>
+<p>左右キー又はクリックで動かすことができるスライドショーです。フルスクリーン表示して頂いた方が見やすいかもしれません。</p>
+</div>
+<div><p>FOSS4G Advent Calendar 2014 の 2014-12-15 の記事です。</p>
+</div>
+<div><p><img src="スクリーンショット 2014-12-15 4.03.22.png" alt=""></p>
+</div>
+<div><p><img src="スクリーンショット 2014-12-15 4.03.33.png" alt=""></p>
+</div>
+<div><p>geojson-vt の情報を頂いたことをきっかけに、よりコードっぽいものをエントリーしたいと思いました。</p>
+<p>そして、コード書きにソーシャルコーディングのツールを使うと考えた時に、どういう風なプロセスになるのかお伝えしてみたいと思いました。</p>
+<p>自己流なので、ご紹介する方法が唯一の正解、というわけではありません。</p>
+<p>まずは github pages を作るところから。それから、プレゼンテーションづくりには tmcw/biggie を使うことにしました。</p>
+</div>
+<div><p>まずは foss4g-advent-calendar-2014 という名前で github のレポジトリを作りました。</p>
+<p>github に handygeospatial/foss4g-advent-calendar-2014 というレポジトリを作ったことになります。</p>
+<p>この作業をするには、github.com のアカウントが必要です。</p>
+</div>
+<div><p><img src="スクリーンショット 2014-12-15 4.04.55.png" alt=""></p>
+</div>
+<div><p>gh-pages というブランチを作りました。github.io にホストしてもらうためです。</p>
+</div>
+<div><p><img src="スクリーンショット 2014-12-15 4.05.21.png" alt=""></p>
+</div>
+<div><p>github.com の右カラムの「Settings」から遷移した設定ページで、Default branch を変更できます。これを gh-pages に変えておきます。</p>
+</div>
+<div><p><img src="スクリーンショット 2014-12-15 4.05.39.png" alt=""></p>
+</div>
+<div><p>これで、レポジトリができました。</p>
+<p>私の手元の環境では、GitHub アプリを導入しているので、
+github.com 右カラムの「Clone in Desktop」をクリックしてレポジトリを持ってきます。</p>
+</div>
+<div><p><img src="スクリーンショット 2014-12-15 4.06.14.png" alt=""></p>
+</div>
+<div><p><img src="スクリーンショット 2014-12-15 4.06.26.png" alt=""></p>
+</div>
+<div><p>GitHub アプリでは、次のような画面でレポジトリをコントロールします。</p>
+</div>
+<div><p><img src="スクリーンショット 2014-12-15 4.06.38.png" alt=""></p>
+</div>
+<div><p>ターミナルでもレポジトリに移動します。</p>
+<p>ここでエントリを作成し、レポジトリに戻せば handygeospatial.github.io/foss4g-advent-calendar-2014 にエントリがホストされる、という目論見です。</p>
+</div>
+<div><p><img src="スクリーンショット 2014-12-15 4.07.19.png" alt=""></p>
+</div>
+<div><p>プレゼン作成には、tmcw/biggie を使うことにしました。tmcw/big の関連ツールで、markdown でプレゼンを書き出すと、html ベースのプレゼンファイルを出力してくれるというツールです。</p>
+</div>
+<div><p><img src="スクリーンショット 2014-12-15 4.08.00.png" alt=""></p>
+</div>
+<div><p>biggie には cli (コマンドラインインタフェース) が用意されていて、npm でインストールするということが、tmcw/biggie のページにかかれています。</p>
+<p>npm がない場合には、node.js を導入する必要があります。</p>
+</div>
+<div><p><img src="スクリーンショット 2014-12-15 4.08.12.png" alt=""></p>
+</div>
+<div><p>npm install -g biggie で biggie をインストールします。</p>
+</div>
+<div><p><img src="スクリーンショット 2014-12-15 4.08.24.png" alt=""></p>
+</div>
+<div><p>cli の動作チェックをしてみます。</p>
+</div>
+<div><p><img src="スクリーンショット 2014-12-15 4.09.31.png" alt=""></p>
+</div>
+<div><p>生成された index.html を開いてみると、確かに tmcw/big 流のプレゼンができていることが確認できます。</p>
+</div>
+<div><p><img src="スクリーンショット 2014-12-15 4.09.37.png" alt=""></p>
+</div>
+<div><p>GitHub アプリにも index.html の生成が反映されています。動作チェックを兼ねてコミットしてみましょう。</p>
+<p>Summary 欄に update とでも記入して Commit ボタンを押します。</p>
+</div>
+<div><p><img src="スクリーンショット 2014-12-15 4.10.14.png" alt=""></p>
+</div>
+<div><p>Unsynced Commit が出てきました。右上の Sync ボタンを押して github.com のレポジトリに同期します。</p>
+</div>
+<div><p><img src="スクリーンショット 2014-12-15 4.10.39.png" alt=""></p>
+</div>
+<div><p>Unsynced Commit が消えて No unsynced commit と表示されたら、同期が終了しています。</p>
+</div>
+<div><p><img src="スクリーンショット 2014-12-15 4.10.53.png" alt=""></p>
+</div>
+<div><p>しばらく待つ必要がある場合がありますが、<a href="http://handygeospatial.github.com/foss4g-advent-calendar-2014/">http://handygeospatial.github.com/foss4g-advent-calendar-2014/</a> にアクセスすると、先ほど biggie で作成したプレゼンがホストされていることが分かります。</p>
+</div>
+<div><p><img src="スクリーンショット 2014-12-15 4.12.33.png" alt=""></p>
+</div>
+<div><p>これで OK です。</p>
+<p>本格的にプレゼンを作成していきましょう。index.markedown で書き進んで biggie で index.html に変換する、というフローでいきます。</p>
+</div>
+<div><p><img src="スクリーンショット 2014-12-15 4.13.40.png" alt=""></p>
+</div>
+<div><p>index.markdown をテキストエディタで書き進めていきます。</p>
+</div>
+<div><p><img src="スクリーンショット 2014-12-15 4.15.31.png" alt=""></p>
+</div>
+<div><p>biggie による処理を Rakefile に記述しておきます。</p>
+</div>
+<div><p><img src="スクリーンショット 2014-12-15 4.16.14.png" alt=""></p>
+</div>
+<div><p><img src="スクリーンショット 2014-12-15 4.16.39.png" alt=""></p>
+</div>
+<div><p>これで、rake 一発でプレゼンをチェックできるようになりました。</p>
+</div>
+<div><p><img src="スクリーンショット 2014-12-15 4.16.54.png" alt=""></p>
+</div>
+<div><p><img src="スクリーンショット 2014-12-15 4.17.04.png" alt=""></p>
+</div>
+<div><p>これまで撮りためたスクリーンショットを使って、このプレゼンを作成していきます。</p>
+</div>
+<div><p><img src="スクリーンショット 2014-12-15 4.17.55.png" alt=""></p>
+</div>
+<div><p><img src="スクリーンショット 2014-12-15 4.27.13.png" alt=""></p>
+<p>--</p>
 </div>
